@@ -1,7 +1,12 @@
-export default function Container() {
+export default function Container(props) {
   return (
-    <div className={classNames("container")}>
-      {this.content}
+    <div>
+      {props.children}
+      <style jsx>{`
+        div {
+          
+        }
+      `}</style>
     </div>
   )
 }
