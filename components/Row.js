@@ -1,6 +1,6 @@
 export default function Row(props) {
   return (
-    <div>
+    <div name={props.name}>
       {props.children}
       <style jsx>{`
         div {
@@ -8,7 +8,13 @@ export default function Row(props) {
           flex-direction: row;
           flex-wrap: wrap;
           flex-grow: 1;
-          height: ${props.height}
+          height: ${props.height};
+          justify-content: ${props.justify};
+          align-self: ${props.justify};
+        }
+
+        div.scroll {
+
         }
       `}</style>
     </div>
