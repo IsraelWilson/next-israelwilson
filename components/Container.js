@@ -9,23 +9,29 @@ export default class Container extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({navPos: window.innerHeight});
-    window.addEventListener('scroll', this.handleScroll);
+    //this.setState({navPos: window.innerHeight});
+    //window.addEventListener('scroll', this.handleScroll);
   };
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    //window.removeEventListener('scroll', this.handleScroll);
   };
 
   handleScroll(event) {
-    console.log('the scroll things', event);
+    /*console.log(window.scrollY);
     this.scrollPos = window.scrollY;
     if(this.scrollPos > this.state.navPos){
       this.setState({navPos: this.scrollPos});
-    }
+    }*/
   };
 
   render() {
+    /*onst children = React.Children.map(this.props.children, child => {
+      return React.cloneElement(child, {
+        position: this.state.navPos
+      });
+    });*/
+
     return (
       <div>
         {this.props.children}

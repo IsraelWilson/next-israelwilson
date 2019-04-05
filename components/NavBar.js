@@ -1,9 +1,10 @@
 import Row from './Row.js'
 import Link from 'next/link'
+import React from 'react'
 
-export default function NavBar() {
-  return (
-    <Row justify="flex-end">
+export default function NavBar(props) {
+return (
+    <Row justify="flex-end" navbar={true}>
       <Link href="#about"><a>About</a></Link>
       <Link href="#skills"><a>Skills</a></Link>
       <Link href="#experience"><a>Experience</a></Link>
