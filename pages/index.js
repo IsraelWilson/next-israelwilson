@@ -9,27 +9,7 @@ export default function Index() {
   return (
     <div>
       <Meta/>
-      <Container>
-        <Row name="about" height="80vh">
-          <p>Row 1</p>
-        </Row>
-        <NavBar/>
-        <Row name="skills" height="80vh">
-          <p>Row 2</p>
-        </Row>
-        <Row name="experience" height="80vh">
-          <p>Row 3</p>
-        </Row>
-        <Row name="education" height="80vh">
-          <p>Row 4</p>
-        </Row>
-        <Row name="socialize" height="80vh">
-          <p>Row 5</p>
-        </Row>
-        <Row name="contact" height="80vh">
-          <p>Row 6</p>
-        </Row>
-      </Container>
+      <Container/>
     </div>
   )
 }
