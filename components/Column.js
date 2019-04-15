@@ -8,8 +8,8 @@ export default function Column(props) {
           div {
             display: flex;
             flex-direction: column;
-            flex-basis: 50%;
-            flex-grow: 0;
+            flex-basis: 100%;
+            flex-grow: 1;
             flex-shrink: 0;
           }
         }
@@ -19,8 +19,8 @@ export default function Column(props) {
           div {
             display: flex;
             flex-direction: column;
-            flex-basis: 33.33%;
-            flex-grow: 0;
+            flex-basis: 50%;
+            flex-grow: 1;
             flex-shrink: 0;
           }
         }
@@ -30,8 +30,8 @@ export default function Column(props) {
           div {
             display: flex;
             flex-direction: column;
-            flex-basis: 16.66%;
-            flex-grow: 0;
+            flex-basis: 25%;
+            flex-grow: 1;
             flex-shrink: 0;
           }
         }
@@ -41,8 +41,8 @@ export default function Column(props) {
           div {
             display: flex;
             flex-direction: column;
-            flex-basis: 8.33%;
-            flex-grow: 0;
+            flex-basis: 25%;
+            flex-grow: 1;
             flex-shrink: 0;
           }
         }
