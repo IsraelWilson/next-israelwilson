@@ -139,7 +139,6 @@ export default class Container extends React.Component {
             <ImageLink href="#" src="/static/img/plays.png"/>
             <ImageLink href="#" src="/static/img/twitters.png"/>
         </Row>
-        </Row>
         <Row name="contact" height="80vh">
             <Contact/>
         </Row>
