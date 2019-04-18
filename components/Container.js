@@ -133,14 +133,16 @@ export default class Container extends React.Component {
             <h3>High School Diploma</h3>
           </Column>
         </Row>
-        <Row name="socialize" height="80vh">
+        <Row name="socialize" height="80vh" justify="space-evenly">
             <ImageLink href="#" src="/static/img/github.png"/>
             <ImageLink href="#" src="/static/img/instagrams.png"/>
             <ImageLink href="#" src="/static/img/plays.png"/>
             <ImageLink href="#" src="/static/img/twitters.png"/>
         </Row>
         <Row name="contact" height="80vh">
+          <Column align="center">
             <Contact/>
+          </Column>
         </Row>
         <style jsx>{`
           div {

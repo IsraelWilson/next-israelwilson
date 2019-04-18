@@ -31,7 +31,7 @@ export default function Meta() {
             padding:0;
             border:0;
             outline:0;
-            font-size:100%;
+            font-size:16px;
             vertical-align:baseline;
             background:transparent;
         }

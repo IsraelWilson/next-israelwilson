@@ -26,19 +26,29 @@ export default class Contact extends React.Component {
   handleFocus(event) {
     const target = event.target;
     const name = target.name;
+    const value = target.value;
 
-    this.setState({[name]: ""});
+    if(name == "name" && value == "Name") {
+      this.setState({[name]: ""});
+    }else if(name == "email" && value == "Email") {
+      this.setState({[name]: ""});
+    }else if(name == "message" && value == "Your Message") {
+      this.setState({[name]: ""});
+    }else {
+      // Handle Error
+    }
   }
 
   handleBlur(event) {
     const target = event.target;
     const name = target.name;
+    const value = target.value;
 
-    if(name == "name") {
+    if(name == "name" && value == "") {
       this.setState({[name]: "Name"});
-    }else if(name == "email") {
+    }else if(name == "email" && value == "") {
       this.setState({[name]: "Email"});
-    }else if(name == "message") {
+    }else if(name == "message" && value == "") {
       this.setState({[name]: "Your Message"});
     }else {
       // Handle Error
@@ -54,8 +64,19 @@ export default class Contact extends React.Component {
         </textarea>
 
         <style jsx>{`
-          input {
+          form {
+            vertical-align: top;
+            width: 50%;
+          }
 
+          input {
+            display: block;
+            width: 100%;
+          }
+
+          textarea {
+            display: block;
+            width: 100%;
           }
         `}</style>
       </form>

@@ -11,6 +11,8 @@ export default function Column(props) {
             flex-basis: 100%;
             flex-grow: 1;
             flex-shrink: 0;
+            align-items: ${props.align};
+            margin: 0.5rem;
           }
         }
 
@@ -22,6 +24,8 @@ export default function Column(props) {
             flex-basis: 50%;
             flex-grow: 1;
             flex-shrink: 0;
+            align-items: ${props.align};
+            margin: 0.5rem;
           }
         }
 
@@ -33,6 +37,8 @@ export default function Column(props) {
             flex-basis: 25%;
             flex-grow: 1;
             flex-shrink: 0;
+            align-items: ${props.align};
+            margin: 0.5rem;
           }
         }
 
@@ -44,6 +50,8 @@ export default function Column(props) {
             flex-basis: 25%;
             flex-grow: 1;
             flex-shrink: 0;
+            align-items: ${props.align};
+            margin: 0.5rem;
           }
         }
       `}</style>
