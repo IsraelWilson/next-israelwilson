@@ -1,2 +1,4 @@
 #Ignore .next/
 .next/
+#Ignore node_modules/
+node_modules/

@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export default function ImageLink(props) {
   return (
     <a href={props.href}>

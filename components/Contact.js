@@ -67,16 +67,22 @@ export default class Contact extends React.Component {
           form {
             vertical-align: top;
             width: 50%;
+            padding: 2rem;
           }
 
           input {
             display: block;
             width: 100%;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
           }
 
           textarea {
             display: block;
             width: 100%;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            height: 10rem;
           }
         `}</style>
       </form>
