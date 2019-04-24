@@ -13,16 +13,26 @@ export default function Bio(props) {
         <img src={props.src} />
       </Column>
       <style jsx>{`
-        h3 {
+        h4 {
           font-size: 4rem;
+          margin-bottom: 1.5rem;
         }
 
-        h2 {
-
+        h1 {
+          margin-bottom: 1.5rem;
         }
 
         p {
           font-size: 2rem;
+        }
+
+        img {
+          max-width: 50%;
+          height: auto;
+        }
+
+        span {
+          text-align: center;
         }
       `}</style>
     </>

@@ -51,12 +51,12 @@ export default class Container extends React.Component {
         <Row name="about">
           <Bio title="About" sub="I'm a software engineer located in the DFW area" desc="I enjoy using different frameworks, developer tools
              and creating products that increase user productivity. My freetime consist of gaming, reading comic books,
-             and eating pasteries at the nearest bakery. Welcome to my corner of the internet! I hope you survive the experience." src="" />
+             and eating pasteries at the nearest bakery. Welcome to my corner of the internet! I hope you survive the experience." src="/static/img/blank.jpg" />
         </Row>
         <Row name="skills">
           <Column>
             <h1>Languages</h1>
-            <Row>
+            <span>
               <Column>
                 <Progress value="25" name="C++"></Progress>
                 <Progress value="25" name="Java"></Progress>
@@ -69,7 +69,7 @@ export default class Container extends React.Component {
                 <Progress value="25" name="MySQL"></Progress>
                 <Progress value="25" name="Javascript"></Progress>
               </Column>
-            </Row>
+            </span>
           </Column>
           <Column>
             <h1>Software</h1>
@@ -131,6 +131,10 @@ export default class Container extends React.Component {
             display: flex;
             flex-direction: column;
             width: 100%;
+          }
+
+          span {
+            
           }
         `}</style>
       </div>
