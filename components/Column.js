@@ -21,7 +21,7 @@ export default function Column(props) {
           div {
             display: flex;
             flex-direction: column;
-            flex-basis: 50%;
+            flex-basis: 48%;
             flex-grow: 1;
             flex-shrink: 0;
             align-items: ${props.align};
@@ -34,7 +34,7 @@ export default function Column(props) {
           div {
             display: flex;
             flex-direction: column;
-            flex-basis: 25%;
+            flex-basis: 23%;
             flex-grow: 1;
             flex-shrink: 0;
             align-items: ${props.align};
@@ -47,7 +47,7 @@ export default function Column(props) {
           div {
             display: flex;
             flex-direction: column;
-            flex-basis: 25%;
+            flex-basis: 23%;
             flex-grow: 1;
             flex-shrink: 0;
             align-items: ${props.align};

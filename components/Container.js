@@ -48,7 +48,7 @@ export default class Container extends React.Component {
         <Row name="landing" height="80vh">
         </Row>
         <NavBar ref={this.navbarRef} class={this.state.navbar}/>
-        <Row name="about">
+        <Row name="about" justify="center">
           <Bio title="About" sub="I'm a software engineer located in the DFW area" desc="I enjoy using different frameworks, developer tools
              and creating products that increase user productivity. My freetime consist of gaming, reading comic books,
              and eating pasteries at the nearest bakery. Welcome to my corner of the internet! I hope you survive the experience." src="/static/img/blank.jpg" />
@@ -96,7 +96,7 @@ export default class Container extends React.Component {
              learning experience and a lot of fun. During the work week I'm using anywhere from 1 - 3 languages, pushing in new features
              or bug fixes for various products, and improving my ability to work on a team." date="September 2018 - Current" company="Oceus Networks" />
 
-          <Position title="Associate Professional Application Designer" desc="As an application designer, my primary duties included taking customer design specifications and implementing it
+          <Position title="Application Designer" desc="As an application designer, my primary duties included taking customer design specifications and implementing it
              using dynamic and resource conscious solutions, using the Agile Development Cycle. Solutions included writing shell
              scripts to automate server deployment and network administration task, setting up reverse proxy and guacamole servers,
              and creating specialized user groups for application server access. Creating customer specific documentation and working
@@ -134,7 +134,7 @@ export default class Container extends React.Component {
           }
 
           span {
-            
+
           }
         `}</style>
       </div>
