@@ -3,16 +3,14 @@ import Column from '../components/Column.js'
 
 export default function Bio(props) {
   return (
-    <div className="column">
-      <div className="row">
-        <span>
-          <h4>{props.title}</h4>
-          <h1>{props.sub}</h1>
-          <p>{props.desc}</p>
-        </span>
-        <span className="bottom">
-          <img src={props.src} />
-        </span>
+    <>
+      <div>
+        <h4>{props.title}</h4>
+        <h1>{props.sub}</h1>
+        <p>{props.desc}</p>
+      </div>
+      <div className="pic">
+        <img src={props.src} />
       </div>
       <style jsx>{`
         h4 {
@@ -33,57 +31,47 @@ export default function Bio(props) {
           max-height: 100%;
         }
 
-        span {
-          display: flex;
-          flex-direction: column;
-          flex-grow: 1;
-        }
-
-        .row {
-          display: flex;
-          flex-direction: row;
-        }
-
-        .bottom {
-          justify-content: flex-end;
+        .pic {
+          justify-content: center;
+          margin-left: 2rem;
         }
 
         /* Landscape phones and down */
         @media (max-width: 600px) {
-          .column {
+          div {
             display: flex;
             flex-direction: column;
-            flex-basis: 100%;
+            flex-basis: 50%;
           }
         }
 
         /* Landscape phone to portrait tablet */
         @media (max-width: 900px) {
-          .column {
+          div {
             display: flex;
             flex-direction: column;
-            flex-basis: 100%;
+            flex-basis: 50%;
           }
         }
 
         /* Portrait tablet to landscape and desktop */
         @media (min-width: 1200px) {
-          .column {
+          div {
             display: flex;
             flex-direction: column;
-            flex-basis: 50%;
+            flex-basis: 25%;
           }
         }
 
         /* Large desktop */
         @media (min-width: 1900px) {
-          .column {
+          div {
             display: flex;
             flex-direction: column;
-            flex-basis: 50%;
+            flex-basis: 25%;
           }
         }
       `}</style>
-    </div>
+    </>
   )
 }

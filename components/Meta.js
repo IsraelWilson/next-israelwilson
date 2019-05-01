@@ -113,6 +113,8 @@ export default function Meta() {
         body {
           font-size: 1em;
           font-family: "Roboto", sans-serif;
+          background-color: #232323;
+          color: #CBD2DB;
 
         }
       `}</style>

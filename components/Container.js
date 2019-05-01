@@ -28,7 +28,6 @@ export default class Container extends React.Component {
   };
 
   handleScroll(event) {
-    //console.log(this.navbarRef.current.getContainer().current.offsetTop);
     if(window.scrollY >= this.divOffsetTop) {
       this.setState({navbar: "sticky"});
     } else {
@@ -56,7 +55,7 @@ export default class Container extends React.Component {
         <Row name="skills">
           <Column>
             <h1>Languages</h1>
-            <span>
+            <span className="row">
               <Column>
                 <Progress value="25" name="C++"></Progress>
                 <Progress value="25" name="Java"></Progress>
@@ -134,7 +133,7 @@ export default class Container extends React.Component {
           }
 
           span {
-
+            display: flex;
           }
         `}</style>
       </div>

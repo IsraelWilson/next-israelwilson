@@ -34,7 +34,7 @@ export default function Column(props) {
           div {
             display: flex;
             flex-direction: column;
-            flex-basis: 23%;
+            flex-basis: 48%;
             flex-grow: 1;
             flex-shrink: 0;
             align-items: ${props.align};
