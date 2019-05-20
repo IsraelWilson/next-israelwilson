@@ -38,12 +38,14 @@ export default class NavBar extends React.Component {
             justify-content: flex-end;
             position: sticky;
             top: 0;
+            background-color: #232323;
           }
 
           a {
             padding: 1rem 1.5rem;
             text-decoration: none;
             text-transform: uppercase;
+            color: #FFFFFF;
           }
 
           a:hover {

@@ -44,15 +44,15 @@ export default class Container extends React.Component {
 
     return (
       <div>
-        <Row name="landing" height="80vh">
+        <Row name="landing" height="80vh" bg="url(/static/img/wall.jpg)">
         </Row>
         <NavBar ref={this.navbarRef} class={this.state.navbar}/>
         <Row name="about" justify="center">
-          <Bio title="About" sub="I'm a software engineer located in the DFW area" desc="I enjoy using different frameworks, developer tools
+          <Bio title="About Me" sub="I'm a software engineer located in the DFW area" desc="I enjoy using different frameworks, developer tools
              and creating products that increase user productivity. My freetime consist of gaming, reading comic books,
-             and eating pasteries at the nearest bakery. Welcome to my corner of the internet! I hope you survive the experience." src="/static/img/blank.jpg" />
+             and eating pasteries at the nearest bakery. Welcome to my corner of the internet! I hope you survive the experience." src="/static/img/bio.png" />
         </Row>
-        <Row name="skills">
+        <Row name="skills" height="80vh">
           <Column>
             <h1>Languages</h1>
             <span className="row">
@@ -134,6 +134,11 @@ export default class Container extends React.Component {
 
           span {
             display: flex;
+          }
+
+          h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
           }
         `}</style>
       </div>

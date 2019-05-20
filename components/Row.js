@@ -8,6 +8,8 @@ export default function Row(props) {
           flex-direction: row;
           flex-wrap: wrap;
           flex-grow: 1;
+          background: ${props.bg};
+          background-size: contain;
           padding-top: 2rem;
           padding-bottom: 2rem;
           height: ${props.height};

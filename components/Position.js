@@ -16,9 +16,10 @@ export default function Position(props) {
         }
 
         p {
-          line-height: 30px;
+          line-height: 1.25;
           margin-bottom: 2rem;
           flex-grow: 1;
+          font-size: 2rem;
         }
 
         span {
