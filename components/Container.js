@@ -44,7 +44,7 @@ export default class Container extends React.Component {
 
     return (
       <div>
-        <Row name="landing" height="80vh" bg="url(/static/img/wall.jpg)">
+        <Row name="landing" height="80vh" bg="url(/static/img/wall.jpg)" blend="luminosity">
         </Row>
         <NavBar ref={this.navbarRef} class={this.state.navbar}/>
         <Row name="about" justify="center">

@@ -9,7 +9,9 @@ export default function Row(props) {
           flex-wrap: wrap;
           flex-grow: 1;
           background: ${props.bg};
-          background-size: contain;
+          background-size: cover;
+          background-color: #232323;
+          background-blend-mode: ${props.blend};
           padding-top: 2rem;
           padding-bottom: 2rem;
           height: ${props.height};
