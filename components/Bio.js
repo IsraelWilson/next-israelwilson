@@ -85,17 +85,23 @@ export default function Bio(props) {
         */
 
         /* Everything below the line is the active css */
+        /* Everything below the line is the active css */
+        /* Everything below the line is the active css */
+
         h4 {
           font-size: 4rem;
           margin-bottom: 1.5rem;
+          text-align: center;
         }
 
         h1 {
           margin-bottom: 1.5rem;
+          text-align: center;
         }
 
         p {
           font-size: 2rem;
+          text-align: center;
         }
 
         img {
@@ -139,8 +145,8 @@ export default function Bio(props) {
         @media (min-width: 1900px) {
           div {
             display: flex;
-            flex-direction: column;
             flex-basis: 75%;
+            flex-direction: column;
           }
         }
       `}</style>

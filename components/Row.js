@@ -16,6 +16,7 @@ export default function Row(props) {
           padding-bottom: 2rem;
           height: ${props.height};
           justify-content: ${props.justify};
+          align-items: ${props.align};
         }
       `}</style>
     </div>

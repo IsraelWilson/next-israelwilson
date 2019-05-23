@@ -44,13 +44,14 @@ export default class Container extends React.Component {
 
     return (
       <div>
-        <Row name="landing" height="80vh" bg="url(/static/img/wall.jpg)" blend="luminosity">
+        <Row name="landing" height="85vh" bg="url(/static/img/wall.jpg)" blend="luminosity">
         </Row>
         <NavBar ref={this.navbarRef} class={this.state.navbar}/>
-        <Row name="about" justify="center">
-          <Bio title="About Me" sub="I'm a software engineer located in the DFW area" desc="I enjoy using different frameworks, developer tools
-             and creating products that increase user productivity. My freetime consist of gaming, reading comic books,
-             and eating pasteries at the nearest bakery. Welcome to my corner of the internet! I hope you survive the experience." src="/static/img/bio.png" />
+        <Row name="about" justify="center" align="center" height="80vh">
+          <Bio title="WHO I AM" sub="Programmer. Gamer. Comic book buff." desc="I am a software engineer located in the Dallas Fort Worth area.
+             My focus is on designing simple, easy to use web and mobile applications for individuals and small businesses. When my hands are
+             away from the keyboard you can usually find me playing a video game, reading a comic books, or eating pasteries at the nearest bakery.
+             Welcome to my corner of the internet! I hope you survive the experience." src="/static/img/bio.png" />
         </Row>
         <Row name="skills" height="80vh">
           <Column>
