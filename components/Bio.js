@@ -1,14 +1,11 @@
-import Row from '../components/Row.js'
-import Column from '../components/Column.js'
+import ColumnBasis from '../components/ColumnBasis.js'
 
 export default function Bio(props) {
   return (
-    <>
-      <div>
-        <h4>{props.title}</h4>
-        <h1>{props.sub}</h1>
+      <ColumnBasis>
+        <h1>{props.title}</h1>
+        <h2>{props.sub}</h2>
         <p>{props.desc}</p>
-      </div>
       {/*
       <div className="pic">
         <img src={props.src} />
@@ -16,12 +13,12 @@ export default function Bio(props) {
       */}
       <style jsx>{`
         /*
-        h4 {
+        h1 {
           font-size: 4rem;
           margin-bottom: 1.5rem;
         }
 
-        h1 {
+        h2 {
           margin-bottom: 1.5rem;
         }
 
@@ -88,14 +85,14 @@ export default function Bio(props) {
         /* Everything below the line is the active css */
         /* Everything below the line is the active css */
 
-        h4 {
-          font-size: 4rem;
+        h1 {
+          font-size: 2rem;
           margin-bottom: 1.5rem;
           text-align: center;
         }
 
-        h1 {
-          margin-bottom: 1.5rem;
+        h2 {
+          margin-bottom: 3rem;
           text-align: center;
         }
 
@@ -112,44 +109,8 @@ export default function Bio(props) {
         .pic {
           justify-content: center;
           margin-left: 2rem;
-        }
-
-        /* Landscape phones and down */
-        @media (max-width: 600px) {
-          div {
-            display: flex;
-            flex-direction: column;
-            flex-basis: 50%;
-          }
-        }
-
-        /* Landscape phone to portrait tablet */
-        @media (max-width: 900px) {
-          div {
-            display: flex;
-            flex-direction: column;
-            flex-basis: 50%;
-          }
-        }
-
-        /* Portrait tablet to landscape and desktop */
-        @media (min-width: 1200px) {
-          div {
-            display: flex;
-            flex-direction: column;
-            flex-basis: 75%;
-          }
-        }
-
-        /* Large desktop */
-        @media (min-width: 1900px) {
-          div {
-            display: flex;
-            flex-basis: 75%;
-            flex-direction: column;
-          }
         }
       `}</style>
-    </>
+    </ColumnBasis>
   )
 }

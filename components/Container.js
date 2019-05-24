@@ -1,6 +1,7 @@
 import React from 'react'
 import Row from '../components/Row.js'
 import Column from '../components/Column.js'
+import ColumnBasis from '../components/ColumnBasis.js'
 import NavBar from '../components/NavBar.js'
 import Progress from '../components/Progress.js'
 import ImageLink from '../components/ImageLink.js'
@@ -53,43 +54,35 @@ export default class Container extends React.Component {
              away from the keyboard you can usually find me playing a video game, reading a comic books, or eating pasteries at the nearest bakery.
              Welcome to my corner of the internet! I hope you survive the experience." src="/static/img/bio.png" />
         </Row>
-        <Row name="skills" height="80vh">
-          <Column>
-            <h1>Languages</h1>
-            <span className="row">
+
+        <Row name="skills" justify="center" height="80vh">
+          <ColumnBasis>
+            <h1>WHAT I DO</h1>
+            <Row>
               <Column>
-                <Progress value="25" name="C++"></Progress>
-                <Progress value="25" name="Java"></Progress>
-                <Progress value="25" name="PHP"></Progress>
-                <Progress value="25" name="Python"></Progress>
+              <Progress value="25" name="C++"></Progress>
+              <Progress value="25" name="Java"></Progress>
+              <Progress value="25" name="PHP"></Progress>
+              <Progress value="25" name="Python"></Progress>
               </Column>
+
               <Column>
                 <Progress value="25" name="HTML"></Progress>
                 <Progress value="25" name="CSS"></Progress>
                 <Progress value="25" name="MySQL"></Progress>
                 <Progress value="25" name="Javascript"></Progress>
               </Column>
-            </span>
-          </Column>
-          <Column>
-            <h1>Software</h1>
-            <Column>
-              <Progress value="25" name="React"></Progress>
-              <Progress value="25" name="Android Studio"></Progress>
-              <Progress value="25" name="Unreal Engine"></Progress>
-              <Progress value="25" name="Illustrator"></Progress>
-            </Column>
 
-          </Column>
-          <Column>
-            <h1>Operating Systems</h1>
-            <Column>
-              <Progress value="25" name="Linux"></Progress>
-              <Progress value="25" name="Microsoft Windows"></Progress>
-            </Column>
-
-          </Column>
+              <Column>
+                <Progress value="25" name="React"></Progress>
+                <Progress value="25" name="Android Studio"></Progress>
+                <Progress value="25" name="Unreal Engine"></Progress>
+                <Progress value="25" name="Illustrator"></Progress>
+              </Column>
+            </Row>
+          </ColumnBasis>
         </Row>
+
         <Row name="experience">
           <Position title="Software Engineer" desc="This was my breakthrough job where I not only grew as a developer, but as a person as well. At Oceus I was responsible
              for designing, implementing, customizing, and unit testing mobile solutions for potential customers. Everyday is a
@@ -133,13 +126,10 @@ export default class Container extends React.Component {
             width: 100%;
           }
 
-          span {
-            display: flex;
-          }
-
           h1 {
             font-size: 2rem;
             margin-bottom: 1rem;
+
           }
         `}</style>
       </div>

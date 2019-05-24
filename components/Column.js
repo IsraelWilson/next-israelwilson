@@ -11,6 +11,7 @@ export default function Column(props) {
             flex-basis: 100%;
             flex-grow: 1;
             flex-shrink: 0;
+            justify-content: ${props.justify};
             align-items: ${props.align};
             margin: 1rem;
           }
@@ -24,6 +25,7 @@ export default function Column(props) {
             flex-basis: 48%;
             flex-grow: 1;
             flex-shrink: 0;
+            justify-content: ${props.justify};
             align-items: ${props.align};
             margin: 1rem;
           }
@@ -37,6 +39,7 @@ export default function Column(props) {
             flex-basis: 48%;
             flex-grow: 1;
             flex-shrink: 0;
+            justify-content: ${props.justify};
             align-items: ${props.align};
             margin: 1rem;
           }
@@ -50,6 +53,7 @@ export default function Column(props) {
             flex-basis: 23%;
             flex-grow: 1;
             flex-shrink: 0;
+            justify-content: ${props.justify};
             align-items: ${props.align};
             margin: 1rem;
           }
