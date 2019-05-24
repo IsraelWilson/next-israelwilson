@@ -3,41 +3,32 @@ export default function ColumnBasis(props) {
     <div>
       {props.children}
       <style jsx>{`
-        /* Landscape phones and down */
-        @media (max-width: 600px) {
-          div {
-            display: flex;
-            flex-direction: column;
-            flex-basis: 50%;
-          }
+
+        /* Desktop styles*/
+        div {
+          display: flex;
+          flex-direction: column;
+          flex-basis: 75%;
         }
 
-        /* Landscape phone to portrait tablet */
+        /* Tablet styles*/
         @media (max-width: 900px) {
           div {
             display: flex;
             flex-direction: column;
-            flex-basis: 50%;
-          }
-        }
-
-        /* Portrait tablet to landscape and desktop */
-        @media (min-width: 1200px) {
-          div {
-            display: flex;
-            flex-direction: column;
             flex-basis: 75%;
           }
         }
 
-        /* Large desktop */
-        @media (min-width: 1900px) {
+        /* Mobile styles*/
+        @media (max-width: 600px) {
           div {
             display: flex;
             flex-direction: column;
-            flex-basis: 75%;
+            flex-basis: 100%;
           }
         }
+
       `}</style>
     </div>
   )

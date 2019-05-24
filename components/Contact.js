@@ -65,8 +65,6 @@ export default class Contact extends React.Component {
 
         <style jsx>{`
           form {
-            vertical-align: top;
-            width: 50%;
             padding: 2rem;
           }
 
