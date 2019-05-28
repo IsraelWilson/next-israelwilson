@@ -45,17 +45,17 @@ export default class Container extends React.Component {
 
     return (
       <div>
-        <Row name="landing" height="85vh" bg="url(/static/img/wall.jpg)" blend="luminosity">
+        <Row name="landing" height="85vh" bgcolor="#232323" bg="url(/static/img/wall.jpg)" blend="luminosity">
         </Row>
         <NavBar ref={this.navbarRef} class={this.state.navbar}/>
-        <Row name="about" justify="center" align="center" height="85vh">
+        <Row name="about" justify="center" align="center" bgcolor="#232323">
           <Bio title="WHO I AM" sub="Programmer. Gamer. Comic book buff." desc="I am a software engineer located in the Dallas Fort Worth area.
              My focus is on designing simple, easy to use web and mobile applications for individuals and small businesses. When my hands are
              away from the keyboard you can usually find me playing a video game, reading a comic books, or eating pasteries at the nearest bakery.
              Welcome to my corner of the internet! I hope you survive the experience." src="/static/img/bio.png" />
         </Row>
 
-        <Row name="skills" justify="center" height="85vh">
+        <Row name="skills" justify="center" bgcolor="#232323">
           <ColumnBasis>
             <h1>WHAT I DO</h1>
             <Row>
@@ -83,7 +83,7 @@ export default class Container extends React.Component {
           </ColumnBasis>
         </Row>
 
-        <Row name="experience" justify="center" height="85vh">
+        <Row name="experience" justify="center" bgcolor="#232323">
           <ColumnBasis>
             <h1>WHERE IVE BEEN</h1>
             <Row>
@@ -109,7 +109,7 @@ export default class Container extends React.Component {
            </ColumnBasis>
         </Row>
 
-        <Row name="education" justify="center" align="center" height="85vh">
+        <Row name="education" justify="center" align="center" bgcolor="#232323">
           <ColumnBasis>
             <h1>WHERE I STUDIED</h1>
             <Row>
@@ -120,14 +120,14 @@ export default class Container extends React.Component {
           </ColumnBasis>
         </Row>
 
-        <Row name="socialize" justify="space-evenly">
+        <Row name="socialize" justify="space-evenly" bgcolor="#232323">
             <ImageLink href="#" src="/static/img/github.png"/>
             <ImageLink href="#" src="/static/img/instagrams.png"/>
             <ImageLink href="#" src="/static/img/plays.png"/>
             <ImageLink href="#" src="/static/img/twitters.png"/>
         </Row>
 
-        <Row name="contact" justify="center" align="center" height="50vh">
+        <Row name="contact" justify="center" align="center" bgcolor="#feda6a">
           <ColumnBasis>
             <h1>GET IN TOUCH</h1>
             <Contact/>

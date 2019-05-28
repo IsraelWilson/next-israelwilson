@@ -10,7 +10,7 @@ export default function Row(props) {
           flex-grow: 1;
           background: ${props.bg};
           background-size: cover;
-          background-color: #232323;
+          background-color: ${props.bgcolor};
           background-blend-mode: ${props.blend};
           padding-top: 2rem;
           padding-bottom: 2rem;
