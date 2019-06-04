@@ -45,35 +45,35 @@ export default class Container extends React.Component {
 
     return (
       <div>
-        <Row name="landing" height="85vh" bgcolor="#232323" bg="url(/static/img/wall.jpg)" blend="luminosity">
+        <Row name="landing" height="85vh" bg="url('https://lh4.googleusercontent.com/jlLx4XvQ3TE6A2HmYuJWUNywOEijDpGVpjAv15jjAKxv67iXAFhWDuvBrUk=w2400')" blend="luminosity">
         </Row>
         <NavBar ref={this.navbarRef} class={this.state.navbar}/>
-        <Row name="about" justify="center" align="center" bgcolor="#232323">
+        <Row name="about" justify="center" align="center">
           <Bio title="WHO I AM" sub="Programmer. Gamer. Comic book buff." desc="I am a software engineer located in the Dallas Fort Worth area.
              My focus is on designing simple, easy to use web and mobile applications for individuals and small businesses. When my hands are
              away from the keyboard you can usually find me playing a video game, reading a comic books, or eating pasteries at the nearest bakery.
              Welcome to my corner of the internet! I hope you survive the experience." src="/static/img/bio.png" />
         </Row>
 
-        <Row name="skills" justify="center" bgcolor="#232323">
+        <Row name="skills" justify="center">
           <ColumnBasis>
             <h1>WHAT I DO</h1>
             <Row>
-              <Column>
+              <Column align="center">
               <Progress value="25" name="C++"></Progress>
               <Progress value="25" name="Java"></Progress>
               <Progress value="25" name="PHP"></Progress>
               <Progress value="25" name="Python"></Progress>
               </Column>
 
-              <Column>
+              <Column align="center">
                 <Progress value="25" name="HTML"></Progress>
                 <Progress value="25" name="CSS"></Progress>
                 <Progress value="25" name="MySQL"></Progress>
                 <Progress value="25" name="Javascript"></Progress>
               </Column>
 
-              <Column>
+              <Column align="center">
                 <Progress value="25" name="React"></Progress>
                 <Progress value="25" name="Android Studio"></Progress>
                 <Progress value="25" name="Unreal Engine"></Progress>
@@ -83,7 +83,7 @@ export default class Container extends React.Component {
           </ColumnBasis>
         </Row>
 
-        <Row name="experience" justify="center" bgcolor="#232323">
+        <Row name="experience" justify="center">
           <ColumnBasis>
             <h1>WHERE IVE BEEN</h1>
             <Row>
@@ -109,7 +109,7 @@ export default class Container extends React.Component {
            </ColumnBasis>
         </Row>
 
-        <Row name="education" justify="center" align="center" bgcolor="#232323">
+        <Row name="education" justify="center" align="center">
           <ColumnBasis>
             <h1>WHERE I STUDIED</h1>
             <Row>
@@ -120,14 +120,14 @@ export default class Container extends React.Component {
           </ColumnBasis>
         </Row>
 
-        <Row name="socialize" justify="space-evenly" bgcolor="#232323">
-            <ImageLink href="#" src="/static/img/github.png"/>
-            <ImageLink href="#" src="/static/img/instagrams.png"/>
-            <ImageLink href="#" src="/static/img/plays.png"/>
-            <ImageLink href="#" src="/static/img/twitters.png"/>
+        <Row name="socialize" justify="space-evenly">
+            <ImageLink href="#" src="https://lh4.googleusercontent.com/S7Dy_3vyxT2fKa0bNQUCF5sp0jMdbTzOD-NvEbF4J8KXyuDeip0fqOrZj0E=w2400"/>
+            <ImageLink href="#" src="https://lh5.googleusercontent.com/2dYiX-eNSXHh6yLRKU3Invh_6lRuXALEEUdeObV__m1cx8vocxHUi74CT4M=w2400"/>
+            <ImageLink href="#" src="https://lh3.googleusercontent.com/zO4SpqGyr31JanKq41ogaBXDIxmX_yCFIR6pskWD2RcNWz0Hyd-T5nGc4Ro=w2400"/>
+            <ImageLink href="#" src="https://lh5.googleusercontent.com/gDuOiKicjDsqC3rY0FnaZFB3hwMwrO9Qn12BWbD7qFS4Fpi6yAWqP8-EZL4=w2400"/>
         </Row>
 
-        <Row name="contact" justify="center" align="center" bgcolor="#feda6a">
+        <Row name="contact" justify="center" align="center">
           <ColumnBasis>
             <h1>GET IN TOUCH</h1>
             <Contact/>
@@ -144,6 +144,7 @@ export default class Container extends React.Component {
           h1 {
             font-size: 2rem;
             margin-bottom: 1rem;
+            align-self: center;
           }
         `}</style>
       </div>
