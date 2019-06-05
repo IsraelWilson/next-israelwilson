@@ -45,7 +45,7 @@ export default class Container extends React.Component {
 
     return (
       <div>
-        <Row name="landing" height="85vh" bg="url('https://lh4.googleusercontent.com/jlLx4XvQ3TE6A2HmYuJWUNywOEijDpGVpjAv15jjAKxv67iXAFhWDuvBrUk=w2400')" blend="luminosity">
+        <Row name="landing" height="85vh" bg="url('https://lh4.googleusercontent.com/jlLx4XvQ3TE6A2HmYuJWUNywOEijDpGVpjAv15jjAKxv67iXAFhWDuvBrUk=w2400')" bgcolor="#232323" blend="luminosity">
         </Row>
         <NavBar ref={this.navbarRef} class={this.state.navbar}/>
         <Row name="about" justify="center" align="center">
@@ -53,34 +53,6 @@ export default class Container extends React.Component {
              My focus is on designing simple, easy to use web and mobile applications for individuals and small businesses. When my hands are
              away from the keyboard you can usually find me playing a video game, reading a comic books, or eating pasteries at the nearest bakery.
              Welcome to my corner of the internet! I hope you survive the experience." src="/static/img/bio.png" />
-        </Row>
-
-        <Row name="skills" justify="center">
-          <ColumnBasis>
-            <h1>WHAT I DO</h1>
-            <Row>
-              <Column align="center">
-              <Progress value="25" name="C++"></Progress>
-              <Progress value="25" name="Java"></Progress>
-              <Progress value="25" name="PHP"></Progress>
-              <Progress value="25" name="Python"></Progress>
-              </Column>
-
-              <Column align="center">
-                <Progress value="25" name="HTML"></Progress>
-                <Progress value="25" name="CSS"></Progress>
-                <Progress value="25" name="MySQL"></Progress>
-                <Progress value="25" name="Javascript"></Progress>
-              </Column>
-
-              <Column align="center">
-                <Progress value="25" name="React"></Progress>
-                <Progress value="25" name="Android Studio"></Progress>
-                <Progress value="25" name="Unreal Engine"></Progress>
-                <Progress value="25" name="Illustrator"></Progress>
-              </Column>
-            </Row>
-          </ColumnBasis>
         </Row>
 
         <Row name="experience" justify="center">
@@ -107,6 +79,34 @@ export default class Container extends React.Component {
                  Windows computers." date="May 2012 - May 2013" company="Fulton County Information Technology" />
              </Row>
            </ColumnBasis>
+        </Row>
+
+        <Row name="skills" justify="center">
+          <ColumnBasis>
+            <h1>WHAT I DO</h1>
+            <Row>
+              <Column align="center">
+              <Progress value="50" name="C++"></Progress>
+              <Progress value="60" name="Java"></Progress>
+              <Progress value="50" name="PHP"></Progress>
+              <Progress value="80" name="Python"></Progress>
+              </Column>
+
+              <Column align="center">
+                <Progress value="90" name="HTML"></Progress>
+                <Progress value="70" name="CSS"></Progress>
+                <Progress value="50" name="MySQL"></Progress>
+                <Progress value="75" name="Javascript"></Progress>
+              </Column>
+
+              <Column align="center">
+                <Progress value="65" name="React"></Progress>
+                <Progress value="60" name="Android Studio"></Progress>
+                <Progress value="25" name="Unreal Engine"></Progress>
+                <Progress value="50" name="Illustrator"></Progress>
+              </Column>
+            </Row>
+          </ColumnBasis>
         </Row>
 
         <Row name="education" justify="center" align="center">
@@ -143,7 +143,7 @@ export default class Container extends React.Component {
 
           h1 {
             font-size: 2rem;
-            margin-bottom: 1rem;
+            margin: 3rem 0 1rem;
             align-self: center;
           }
         `}</style>

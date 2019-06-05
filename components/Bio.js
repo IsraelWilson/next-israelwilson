@@ -87,7 +87,7 @@ export default function Bio(props) {
 
         h1 {
           font-size: 2rem;
-          margin-bottom: 1.5rem;
+          margin: 3rem 0 1.5rem;
           text-align: center;
         }
 
