@@ -16,8 +16,8 @@ export default class NavBar extends React.Component {
     return (
       <div ref={this.divRef} className={this.props.class}>
         <Link href="#about"><a>About</a></Link>
-        <Link href="#skills"><a>Skills</a></Link>
         <Link href="#experience"><a>Experience</a></Link>
+        <Link href="#skills"><a>Skills</a></Link>
         <Link href="#education"><a>Education</a></Link>
         <Link href="#socialize"><a>Socialize</a></Link>
         <Link href="#contact"><a>Contact</a></Link>
