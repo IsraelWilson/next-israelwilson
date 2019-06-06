@@ -5,22 +5,80 @@ import React from 'react'
 export default class NavBar extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {about: "inactive",
+                  experience: "inactive",
+                  skills: "inactive",
+                  education: "inactive",
+                  socialize: "inactive",
+                  contact: "inactive"};
     this.divRef = React.createRef();
+    this.handleClick = this.handleClick.bind(this);
   }
 
   getContainer() {
     return this.divRef;
   };
 
+  handleClick(link) {
+    if(link == "about"){
+      this.setState({about: "active",
+                    experience: "inactive",
+                    skills: "inactive",
+                    education: "inactive",
+                    socialize: "inactive",
+                    contact: "inactive"});
+    }
+    if(link == "experience"){
+      this.setState({about: "inactive",
+                    experience: "active",
+                    skills: "inactive",
+                    education: "inactive",
+                    socialize: "inactive",
+                    contact: "inactive"});
+    }
+    if(link == "skills"){
+      this.setState({about: "inactive",
+                    experience: "inactive",
+                    skills: "active",
+                    education: "inactive",
+                    socialize: "inactive",
+                    contact: "inactive"});
+    }
+    if(link == "education"){
+      this.setState({about: "inactive",
+                    experience: "inactive",
+                    skills: "inactive",
+                    education: "active",
+                    socialize: "inactive",
+                    contact: "inactive"});
+    }
+    if(link == "socialize"){
+      this.setState({about: "inactive",
+                    experience: "inactive",
+                    skills: "inactive",
+                    education: "inactive",
+                    socialize: "active",
+                    contact: "inactive"});
+    }
+    if(link == "contact"){
+      this.setState({about: "inactive",
+                    experience: "inactive",
+                    skills: "inactive",
+                    education: "inactive",
+                    socialize: "inactive",
+                    contact: "active"});
+    }
+  }
+
   render() {
     return (
       <div ref={this.divRef} className={this.props.class}>
-        <Link href="#about"><a>About</a></Link>
-        <Link href="#experience"><a>Experience</a></Link>
-        <Link href="#skills"><a>Skills</a></Link>
-        <Link href="#education"><a>Education</a></Link>
-        <Link href="#socialize"><a>Socialize</a></Link>
-        <Link href="#contact"><a>Contact</a></Link>
+        <Link href="#about"><a className={this.state.about == "active" ? "active" : "inactive"} onClick={this.handleClick.bind(this, "about")}>About</a></Link>
+        <Link href="#experience"><a className={this.state.experience == "active" ? "active" : "inactive"} onClick={this.handleClick.bind(this, "experience")}>Experience</a></Link>
+        <Link href="#skills"><a className={this.state.skills == "active" ? "active" : "inactive"} onClick={this.handleClick.bind(this, "skills")}>Skills</a></Link>
+        <Link href="#education"><a className={this.state.education == "active" ? "active" : "inactive"} onClick={this.handleClick.bind(this, "education")}>Education</a></Link>
+        <Link href="#socialize"><a className={this.state.socialize == "active" ? "active" : "inactive"} onClick={this.handleClick.bind(this, "socialize")}>Socialize</a></Link>
+        <Link href="#contact"><a className={this.state.contact == "active" ? "active" : "inactive"} onClick={this.handleClick.bind(this, "contact")}>Contact</a></Link>
         <style jsx>{`
           div {
             display: flex;
@@ -49,7 +107,7 @@ export default class NavBar extends React.Component {
           }
 
           a:hover {
-            background-color: #555;
+            color: #feda6a;
           }
 
           a:active {
@@ -58,6 +116,10 @@ export default class NavBar extends React.Component {
 
           a:visited {
             background-color: #ccc;
+          }
+
+          .active {
+            color: #feda6a;
           }
         `}</style>
       </div>

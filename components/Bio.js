@@ -4,6 +4,7 @@ export default function Bio(props) {
   return (
       <ColumnBasis>
         <h1>{props.title}</h1>
+        <hr/>
         <h2>{props.sub}</h2>
         <p>{props.desc}</p>
       {/*
@@ -94,6 +95,7 @@ export default function Bio(props) {
         h2 {
           margin-bottom: 3rem;
           text-align: center;
+          color: #feda6a;
         }
 
         p {

@@ -58,6 +58,7 @@ export default class Container extends React.Component {
         <Row name="experience" justify="center" margin="0 0 10rem">
           <ColumnBasis>
             <h1>WHERE IVE BEEN</h1>
+            <hr/>
             <Row>
               <Position title="Software Engineer" desc="At Oceus I am responsible for the creation and maintenence of system APIs, and improving software performance while
                   focusing on a user friendly experience. We deliver mobile solutions integrating fixed and wireless broadband technologies that enable secure, high-speed voice, video, and data communication." date="September 2018 - Current" company="Oceus Networks" />
@@ -77,6 +78,7 @@ export default class Container extends React.Component {
         <Row name="skills" justify="center" margin="5rem 0 5rem">
           <ColumnBasis>
             <h1>WHAT I DO</h1>
+            <hr/>
             <Row>
               <Column align="center">
               <Progress value="50" name="C++"></Progress>
@@ -105,6 +107,7 @@ export default class Container extends React.Component {
         <Row name="education" justify="center" align="center" margin="5rem 0 5rem">
           <ColumnBasis>
             <h1>WHERE I STUDIED</h1>
+            <hr/>
             <Row>
               <Education date="2010" school="Morehouse College" degree="B.S. in Computer Science"/>
 
@@ -116,6 +119,7 @@ export default class Container extends React.Component {
         <Row name="socialize" justify="center" margin="5rem 0 5rem">
           <ColumnBasis>
             <h1>WHERE I SOCIALIZE</h1>
+            <hr/>
             <Row>
                 <ImageLink href="#" src="https://lh4.googleusercontent.com/S7Dy_3vyxT2fKa0bNQUCF5sp0jMdbTzOD-NvEbF4J8KXyuDeip0fqOrZj0E=w2400"/>
                 <ImageLink href="#" src="https://lh5.googleusercontent.com/2dYiX-eNSXHh6yLRKU3Invh_6lRuXALEEUdeObV__m1cx8vocxHUi74CT4M=w2400"/>
@@ -128,6 +132,7 @@ export default class Container extends React.Component {
         <Row name="contact" justify="center" align="center">
           <ColumnBasis>
             <h1>GET IN TOUCH</h1>
+            <hr/>
             <Contact/>
           </ColumnBasis>
         </Row>

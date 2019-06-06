@@ -16,6 +16,7 @@ export default function Education(props) {
 
           h1 {
             margin-bottom: 1.5rem;
+            color: #feda6a;
           }
 
           h3 {

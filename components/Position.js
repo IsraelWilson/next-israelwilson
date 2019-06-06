@@ -11,7 +11,7 @@ export default function Position(props) {
       </span>
       <style jsx>{`
         h1 {
-          font-size: 2rem;
+          font-size: 1.5rem;
           margin-bottom: 2rem;
         }
 
@@ -30,6 +30,11 @@ export default function Position(props) {
         h3 {
           font-size: 1rem;
         }
+
+        h3:last-child {
+          color: #feda6a;
+        }
+
       `}</style>
     </Column>
   )
