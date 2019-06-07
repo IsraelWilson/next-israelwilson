@@ -13,14 +13,42 @@ import Bio from '../components/Bio.js'
 export default class Container extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {navbar: "clean"};
+    this.state = {navbar: "clean",
+                  about: false,
+                  experience: false,
+                  skills: false,
+                  education: false,
+                  socialize: false,
+                  contact: false};
+
     this.navbarRef = React.createRef();
+    this.aboutRef = React.createRef();
+    this.experienceRef = React.createRef();
+    this.skillsRef = React.createRef();
+    this.educationRef = React.createRef();
+    this.socializeRef = React.createRef();
+    this.contactRef = React.createRef();
+
     this.divOffsetTop = 0;
+    this.aboutOffsetTop = 0;
+    this.experienceOffsetTop = 0;
+    this.skillsOffsetTop = 0;
+    this.educationOffsetTop = 0;
+    this.socializeOffsetTop = 0;
+    this.contactOffsetTop = 0;
+
     this.handleScroll = this.handleScroll.bind(this);
   }
 
   componentDidMount() {
     this.divOffsetTop = this.navbarRef.current.getContainer().current.offsetTop;
+    this.aboutOffsetTop = this.aboutRef.current.getContainer().current.offsetTop;
+    this.experienceOffsetTop = this.experienceRef.current.getContainer().current.offsetTop;
+    this.skillsOffsetTop = this.skillsRef.current.getContainer().current.offsetTop;
+    this.educationOffsetTop = this.educationRef.current.getContainer().current.offsetTop;
+    this.socializeOffsetTop = this.socializeRef.current.getContainer().current.offsetTop;
+    this.contactOffsetTop = this.contactRef.current.getContainer().current.offsetTop;
+
     window.addEventListener('scroll', this.handleScroll);
   };
 
@@ -33,6 +61,60 @@ export default class Container extends React.Component {
       this.setState({navbar: "sticky"});
     } else {
       this.setState({navbar: "clean"});
+    }
+
+    if(window.scrollY >= this.aboutOffsetTop){
+      this.setState({about: true,
+                     experience: false,
+                     skills: false,
+                     education: false,
+                     socialize: false,
+                     contact: false});
+    }
+
+    if(window.scrollY >= this.experienceOffsetTop){
+      this.setState({about: false,
+                     experience: true,
+                     skills: false,
+                     education: false,
+                     socialize: false,
+                     contact: false});
+    }
+
+    if(window.scrollY >= this.skillsOffsetTop){
+      this.setState({about: false,
+                     experience: false,
+                     skills: true,
+                     education: false,
+                     socialize: false,
+                     contact: false});
+    }
+
+    if(window.scrollY >= this.educationOffsetTop){
+      this.setState({about: false,
+                     experience: false,
+                     skills: false,
+                     education: true,
+                     socialize: false,
+                     contact: false});
+    }
+
+    if(window.scrollY >= this.socializeOffsetTop){
+      this.setState({about: false,
+                     experience: false,
+                     skills: false,
+                     education: false,
+                     socialize: true,
+                     contact: false});
+    }
+
+    if(window.scrollY >= this.contactOffsetTop){
+      this.setState({about: false,
+                     experience: false,
+                     skills: false,
+                     education: false,
+                     socialize: false,
+                     contact: true});
     }
   };
 
@@ -47,15 +129,15 @@ export default class Container extends React.Component {
       <div>
         <Row name="landing" height="85vh" bg="url('https://lh4.googleusercontent.com/jlLx4XvQ3TE6A2HmYuJWUNywOEijDpGVpjAv15jjAKxv67iXAFhWDuvBrUk=w2400')" bgcolor="#232323" blend="luminosity">
         </Row>
-        <NavBar ref={this.navbarRef} class={this.state.navbar}/>
-        <Row name="about" justify="center" align="center" margin="0 0 10rem">
+        <NavBar ref={this.navbarRef} section={this.state} class={this.state.navbar}/>
+        <Row ref={this.aboutRef} name="about" justify="center" align="center" margin="0 0 10rem">
           <Bio title="WHO I AM" sub="Programmer. Gamer. Comic book buff." desc="I am a software engineer located in the Dallas Fort Worth area.
              My focus is on designing simple, easy to use web and mobile applications for individuals and small businesses. When my hands are
              away from the keyboard you can usually find me playing a video game, reading a comic books, or eating pasteries at the nearest bakery.
              Welcome to my corner of the internet! I hope you survive the experience." src="/static/img/bio.png" />
         </Row>
 
-        <Row name="experience" justify="center" margin="0 0 10rem">
+        <Row ref={this.experienceRef} name="experience" justify="center" margin="0 0 10rem">
           <ColumnBasis>
             <h1>WHERE IVE BEEN</h1>
             <hr/>
@@ -75,7 +157,7 @@ export default class Container extends React.Component {
            </ColumnBasis>
         </Row>
 
-        <Row name="skills" justify="center" margin="5rem 0 5rem">
+        <Row ref={this.skillsRef} name="skills" justify="center" margin="5rem 0 5rem">
           <ColumnBasis>
             <h1>WHAT I DO</h1>
             <hr/>
@@ -104,7 +186,7 @@ export default class Container extends React.Component {
           </ColumnBasis>
         </Row>
 
-        <Row name="education" justify="center" align="center" margin="5rem 0 5rem">
+        <Row ref={this.educationRef} name="education" justify="center" align="center" margin="5rem 0 5rem">
           <ColumnBasis>
             <h1>WHERE I STUDIED</h1>
             <hr/>
@@ -116,7 +198,7 @@ export default class Container extends React.Component {
           </ColumnBasis>
         </Row>
 
-        <Row name="socialize" justify="center" margin="5rem 0 5rem">
+        <Row ref={this.socializeRef} name="socialize" justify="center" margin="5rem 0 5rem">
           <ColumnBasis>
             <h1>WHERE I SOCIALIZE</h1>
             <hr/>
@@ -129,7 +211,7 @@ export default class Container extends React.Component {
           </ColumnBasis>
         </Row>
 
-        <Row name="contact" justify="center" align="center">
+        <Row ref={this.contactRef} name="contact" justify="center" align="center">
           <ColumnBasis>
             <h1>GET IN TOUCH</h1>
             <hr/>
