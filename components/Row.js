@@ -18,7 +18,7 @@ export default class Row extends React.Component {
             flex-direction: row;
             flex-wrap: wrap;
             flex-grow: 1;
-            background: ${this.props.bg};
+            background: ${this.props.bg} no-repeat center center fixed;
             background-size: cover;
             background-color: ${this.props.bgcolor};
             background-blend-mode: ${this.props.blend};
