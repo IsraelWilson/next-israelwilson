@@ -1,6 +1,6 @@
-const nodemailer = require('nodemailer')
 import getConfig from 'next/config'
 const {serverRuntimeConfig} = getConfig()
+//const {nodemailer} = getConfig()
 
 export default class Contact extends React.Component {
   constructor(props) {
