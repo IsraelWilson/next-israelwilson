@@ -1,4 +1,6 @@
-import fetch from 'isomorphic-unfetch'
+const nodemailer = require('nodemailer')
+import getConfig from 'next/config'
+const {serverRuntimeConfig} = getConfig()
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -30,21 +32,32 @@ export default class Contact extends React.Component {
       return;
     }
     console.log("Preparing to POST");
+    console.log(serverRuntimeConfig.user);
+    console.log(serverRuntimeConfig.pass);
 
-    fetch("http://www.israelwilson.com/cgi-sys/formmail.pl", {
-      method: "POST",
-      headers: {
-        "Content-Type": "text/plain"
-      },
-      body: {
-        recipient: "israelsjwilson@gmail.com",
-        subject: "New Message From " + this.state.name,
-        email: this.state.email,
-        comment: this.state.message
+    let transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: serverRuntimeConfig.user,
+        pass: serverRuntimeConfig.pass
       }
-    }).then(function(response){
-      console.log(response);
-    }).catch((err) => console.log(err));
+    });
+
+    let mailOptions = {
+      from: this.state.email,
+      to: serverRuntimeConfig.user,
+      subject: "Portfolio contact form message from " + this.state.name,
+      text: this.state.message
+    };
+
+    transporter.sendMail(mailOptions, function(err, data) {
+      if(err) {
+        console.log("Error sending mail", err);
+      }
+      else {
+        console.log("Email sent");
+      }
+    });
 
     console.log("End of handleSubmit()");
   }

@@ -7,3 +7,5 @@ node_modules/
 #Ignore out/ and build/
 out/
 build/
+
+next.config.js
