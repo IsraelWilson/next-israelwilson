@@ -1,4 +1,3 @@
-var nodemailer = require('nodemailer')
 import getConfig from 'next/config'
 const {serverRuntimeConfig} = getConfig()
 
@@ -34,30 +33,6 @@ export default class Contact extends React.Component {
     console.log("Preparing to POST");
     console.log(serverRuntimeConfig.user);
     console.log(serverRuntimeConfig.pass);
-
-    let transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: serverRuntimeConfig.user,
-        pass: serverRuntimeConfig.pass
-      }
-    });
-
-    let mailOptions = {
-      from: this.state.email,
-      to: serverRuntimeConfig.user,
-      subject: "Portfolio contact form message from " + this.state.name,
-      text: this.state.message
-    };
-
-    transporter.sendMail(mailOptions, function(err, data) {
-      if(err) {
-        console.log("Error sending mail", err);
-      }
-      else {
-        console.log("Email sent");
-      }
-    });
 
     console.log("End of handleSubmit()");
   }
