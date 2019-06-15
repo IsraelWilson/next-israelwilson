@@ -1,3 +1,4 @@
+import fetch from 'isomorphic-unfetch'
 import getConfig from 'next/config'
 const {serverRuntimeConfig} = getConfig()
 
@@ -33,6 +34,25 @@ export default class Contact extends React.Component {
     console.log("Preparing to POST");
     console.log(serverRuntimeConfig.user);
     console.log(serverRuntimeConfig.pass);
+    fetch('/send', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message
+      })
+    })
+    .then((res) => res.json())
+    .then((res) => {
+      console.log('Contact form response: ', res);
+    })
+    .catch((err) => {
+      console.log('Contact form error: ', err)
+    })
 
     console.log("End of handleSubmit()");
   }
