@@ -132,9 +132,8 @@ export default class Container extends React.Component {
         <NavBar ref={this.navbarRef} section={this.state} class={this.state.navbar}/>
         <Row ref={this.aboutRef} name="about" justify="center" align="center" margin="0 0 10rem">
           <Bio title="WHO I AM" sub="Programmer. Gamer. Comic book buff." desc="I am a software engineer located in the Dallas Fort Worth area.
-             My focus is on designing simple, easy to use web and mobile applications for individuals and small businesses. When my hands are
-             away from the keyboard you can usually find me playing a video game, reading a comic books, or eating pasteries at the nearest bakery.
-             Welcome to my corner of the internet! I hope you survive the experience." src="/static/img/bio.png" />
+             My focus is on designing simple, easy to use web apps and android apps for small businesses. I like to spend my down time playing a video games, reading, and
+             hanging out with friends." src="/static/img/bio.png" />
         </Row>
 
         <Row ref={this.experienceRef} name="experience" justify="center" margin="0 0 10rem">
