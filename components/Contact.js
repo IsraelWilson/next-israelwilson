@@ -46,7 +46,7 @@ export default class Contact extends React.Component {
       console.log('Contact form response: ', res);
     })
     .catch((err) => {
-      console.log('Contact form error: ', err)
+      console.log('Contact form error: ', err);
     })
 
   }
