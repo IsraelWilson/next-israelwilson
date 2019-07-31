@@ -1,6 +1,4 @@
 import fetch from 'isomorphic-unfetch'
-import getConfig from 'next/config'
-const {serverRuntimeConfig} = getConfig()
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -31,9 +29,6 @@ export default class Contact extends React.Component {
     if(this.state.name.toLowerCase() == "name" || this.state.email.toLowerCase() == "email" || this.state.message.toLowerCase() == "your message"){
       return;
     }
-    console.log("Preparing to POST");
-    console.log(serverRuntimeConfig.user);
-    console.log(serverRuntimeConfig.pass);
     fetch('/send', {
       method: 'POST',
       headers: {
@@ -46,7 +41,7 @@ export default class Contact extends React.Component {
         message: this.state.message
       })
     })
-    .then((res) => res.json())
+    .then((res) => res.text())
     .then((res) => {
       console.log('Contact form response: ', res);
     })
@@ -54,7 +49,6 @@ export default class Contact extends React.Component {
       console.log('Contact form error: ', err)
     })
 
-    console.log("End of handleSubmit()");
   }
 
   handleFocus(event) {
