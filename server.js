@@ -54,4 +54,6 @@ app.prepare().then(() => {
   })
 
 })
-
+.catch((err) => {
+  console.log('Internal server error: ', err);
+})
