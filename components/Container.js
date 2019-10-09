@@ -190,9 +190,9 @@ export default class Container extends React.Component {
             <h1>WHERE I STUDIED</h1>
             <hr/>
             <Row>
-              <Education date="2010" school="Morehouse College" degree="B.S. in Computer Science"/>
+              <Education date="2015" school="Morehouse College" degree="B.S. in Computer Science"/>
 
-              <Education date="2015" school="Urban Prep Academy" degree="High School Diploma"/>
+              <Education date="2010" school="Urban Prep Academy" degree="High School Diploma"/>
             </Row>
           </ColumnBasis>
         </Row>
