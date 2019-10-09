@@ -48,7 +48,7 @@ export default function Column(props) {
     </div>
   )
 
-  static defaultProps = {
+  Column.defaultProps = {
     display: "flex";
     flex-direction: "column";
     flex-basis-mb: "100%";
