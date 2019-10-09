@@ -49,15 +49,15 @@ export default function Column(props) {
   )
 
   Column.defaultProps = {
-    display: "flex";
-    flex-direction: "column";
-    flex-basis-mb: "100%";
-    flex-basis-tl: "47%";
-    flex-basis-dt: "22%";
-    flex-grow: 1;
-    flex-shrink: 0;
-    justify-content: "normal";
-    align-items: "center";
-    margin: 1rem;
+    display: "flex",
+    flex-direction: "column",
+    flex-basis-mb: "100%",
+    flex-basis-tl: "47%",
+    flex-basis-dt: "22%",
+    flex-grow: 1,
+    flex-shrink: 0,
+    justify-content: "normal",
+    align-items: "center",
+    margin: "1rem"
   }
 }
