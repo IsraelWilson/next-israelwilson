@@ -7,12 +7,12 @@ export default function Column(props) {
         /* Desktop styles */
         div {
           display: ${props.display};
-          flex-direction: ${props.flex-direction};
-          flex-basis: ${props.flex-basis-dt};
-          flex-grow: ${props.flex-grow};
-          flex-shrink: ${props.flex-shrink};
-          justify-content: ${props.justify-content};
-          align-items: ${props.align-items};
+          flex-direction: ${props.flexDirection};
+          flex-basis: ${props.flexBasisDt};
+          flex-grow: ${props.flexGrow};
+          flex-shrink: ${props.flexShrink};
+          justify-content: ${props.justifyContent};
+          align-items: ${props.alignItems};
           margin: ${props.margin};
         }
 
@@ -20,12 +20,12 @@ export default function Column(props) {
         @media (max-width: 900px) {
           div {
             display: ${props.display};
-            flex-direction: ${props.flex-direction};
-            flex-basis: ${props.flex-basis-tl};
-            flex-grow: ${props.flex-grow};
-            flex-shrink: ${props.flex-shrink};
-            justify-content: ${props.justify-content};
-            align-items: ${props.align-items};
+            flex-direction: ${props.flexDirection};
+            flex-basis: ${props.flexBasisTl};
+            flex-grow: ${props.flexGrow};
+            flex-shrink: ${props.flexShrink};
+            justify-content: ${props.justifyContent};
+            align-items: ${props.alignItems};
             margin: ${props.margin};
           }
         }
@@ -34,12 +34,12 @@ export default function Column(props) {
         @media (max-width: 600px) {
           div {
             display: ${props.display};
-            flex-direction: ${props.flex-direction};
-            flex-basis: ${props.flex-basis-mb};
-            flex-grow: ${props.flex-grow};
-            flex-shrink: ${props.flex-shrink};
-            justify-content: ${props.justify-content};
-            align-items: ${props.align-items};
+            flex-direction: ${props.flexDirection};
+            flex-basis: ${props.flexBasisMb};
+            flex-grow: ${props.flexGrow};
+            flex-shrink: ${props.flexShrink};
+            justify-content: ${props.justifyContent};
+            align-items: ${props.alignItems};
             margin: ${props.margin};
           }
         }
@@ -50,14 +50,14 @@ export default function Column(props) {
 
   Column.defaultProps = {
     display: "flex",
-    flex-direction: "column",
-    flex-basis-mb: "100%",
-    flex-basis-tl: "47%",
-    flex-basis-dt: "22%",
-    flex-grow: 1,
-    flex-shrink: 0,
-    justify-content: "normal",
-    align-items: "center",
+    flexDirection: "column",
+    flexBasisMb: "100%",
+    flexBasisTl: "47%",
+    flexBasisDt: "22%",
+    flexGrow: 1,
+    flexShrink: 0,
+    justifyContent: "normal",
+    alignItems: "center",
     margin: "1rem"
   }
 }
