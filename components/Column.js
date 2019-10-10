@@ -1,13 +1,13 @@
-export default function Column({display: "flex",
-                                flexDirection: "column",
-                                flexBasisMb: "100%",
-                                flexBasisTl: "47%",
-                                flexBasisDt: "22%",
-                                flexGrow: 1,
-                                flexShrink: 0,
-                                justifyContent: "normal",
-                                alignItems: "center",
-                                margin: "1rem"}) {
+export default function Column({display = "flex",
+                                flexDirection = "column",
+                                flexBasisMb = "100%",
+                                flexBasisTl = "47%",
+                                flexBasisDt = "22%",
+                                flexGrow = 1,
+                                flexShrink = 0,
+                                justifyContent = "normal",
+                                alignItems = "center",
+                                margin = "1rem"}) {
   return (
     <div>
       {props.children}
@@ -56,5 +56,5 @@ export default function Column({display: "flex",
       `}</style>
     </div>
   )
-  
+
 }
