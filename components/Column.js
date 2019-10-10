@@ -16,41 +16,41 @@ export default function Column({display = "flex",
 
         /* Desktop styles */
         div {
-          display: ${props.display};
-          flex-direction: ${props.flexDirection};
-          flex-basis: ${props.flexBasisDt};
-          flex-grow: ${props.flexGrow};
-          flex-shrink: ${props.flexShrink};
-          justify-content: ${props.justifyContent};
-          align-items: ${props.alignItems};
-          margin: ${props.margin};
+          display: ${display};
+          flex-direction: ${flexDirection};
+          flex-basis: ${flexBasisDt};
+          flex-grow: ${flexGrow};
+          flex-shrink: ${flexShrink};
+          justify-content: ${justifyContent};
+          align-items: ${alignItems};
+          margin: ${margin};
         }
 
         /* Tablet styles */
         @media (max-width: 900px) {
           div {
-            display: ${props.display};
-            flex-direction: ${props.flexDirection};
-            flex-basis: ${props.flexBasisTl};
-            flex-grow: ${props.flexGrow};
-            flex-shrink: ${props.flexShrink};
-            justify-content: ${props.justifyContent};
-            align-items: ${props.alignItems};
-            margin: ${props.margin};
+            display: ${display};
+            flex-direction: ${flexDirection};
+            flex-basis: ${flexBasisTl};
+            flex-grow: ${flexGrow};
+            flex-shrink: ${flexShrink};
+            justify-content: ${justifyContent};
+            align-items: ${alignItems};
+            margin: ${margin};
           }
         }
 
         /* Mobile styles */
         @media (max-width: 600px) {
           div {
-            display: ${props.display};
-            flex-direction: ${props.flexDirection};
-            flex-basis: ${props.flexBasisMb};
-            flex-grow: ${props.flexGrow};
-            flex-shrink: ${props.flexShrink};
-            justify-content: ${props.justifyContent};
-            align-items: ${props.alignItems};
-            margin: ${props.margin};
+            display: ${display};
+            flex-direction: ${flexDirection};
+            flex-basis: ${flexBasisMb};
+            flex-grow: ${flexGrow};
+            flex-shrink: ${flexShrink};
+            justify-content: ${justifyContent};
+            align-items: ${alignItems};
+            margin: ${margin};
           }
         }
 
