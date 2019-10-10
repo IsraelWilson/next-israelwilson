@@ -1,7 +1,6 @@
 import React from 'react'
 import Row from '../components/Row.js'
 import Column from '../components/Column.js'
-import ColumnBasis from '../components/ColumnBasis.js'
 import NavBar from '../components/NavBar.js'
 import Progress from '../components/Progress.js'
 import ImageLink from '../components/ImageLink.js'
@@ -137,7 +136,7 @@ export default class Container extends React.Component {
         </Row>
 
         <Row ref={this.experienceRef} name="experience" justify="center" margin="0 0 10rem">
-          <ColumnBasis>
+          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%">
             <h1>WHERE IVE BEEN</h1>
             <hr/>
             <Row>
@@ -153,11 +152,11 @@ export default class Container extends React.Component {
               <Position title="Technical Support" desc="My responsibilities as technical support included network management, updating/managing operating system images, delivery
                   and installation of workstations, and ordering hardware. This is what I consider my first oppertunity as a technical professional." date="May 2012 - May 2013" company="Fulton County Information Technology" />
              </Row>
-           </ColumnBasis>
+           </Column>
         </Row>
 
         <Row ref={this.skillsRef} name="skills" justify="center" margin="5rem 0 5rem">
-          <ColumnBasis>
+          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%">
             <h1>WHAT I DO</h1>
             <hr/>
             <Row>
@@ -182,11 +181,11 @@ export default class Container extends React.Component {
                 <Progress value="50" name="Illustrator"></Progress>
               </Column>
             </Row>
-          </ColumnBasis>
+          </Column>
         </Row>
 
         <Row ref={this.educationRef} name="education" justify="center" align="center" margin="5rem 0 5rem">
-          <ColumnBasis>
+          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%">
             <h1>WHERE I STUDIED</h1>
             <hr/>
             <Row>
@@ -194,11 +193,11 @@ export default class Container extends React.Component {
 
               <Education date="2010" school="Urban Prep Academy" degree="High School Diploma"/>
             </Row>
-          </ColumnBasis>
+          </Column>
         </Row>
 
         <Row ref={this.socializeRef} name="socialize" justify="center" margin="5rem 0 5rem">
-          <ColumnBasis>
+          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%">
             <h1>WHERE I SOCIALIZE</h1>
             <hr/>
             <Row>
@@ -207,15 +206,15 @@ export default class Container extends React.Component {
                 <ImageLink href="#" src="https://lh3.googleusercontent.com/zO4SpqGyr31JanKq41ogaBXDIxmX_yCFIR6pskWD2RcNWz0Hyd-T5nGc4Ro=w2400"/>
                 <ImageLink href="#" src="https://lh5.googleusercontent.com/gDuOiKicjDsqC3rY0FnaZFB3hwMwrO9Qn12BWbD7qFS4Fpi6yAWqP8-EZL4=w2400"/>
             </Row>
-          </ColumnBasis>
+          </Column>
         </Row>
 
         <Row ref={this.contactRef} name="contact" justify="center" align="center">
-          <ColumnBasis>
+          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%">
             <h1>GET IN TOUCH</h1>
             <hr/>
             <Contact/>
-          </ColumnBasis>
+          </Column>
         </Row>
 
         <style jsx>{`
