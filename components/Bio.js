@@ -1,8 +1,8 @@
-import ColumnBasis from '../components/ColumnBasis.js'
+import Column from '../components/Column.js'
 
 export default function Bio(props) {
   return (
-      <ColumnBasis>
+      <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%">
         <h1>{props.title}</h1>
         <hr/>
         <h2>{props.sub}</h2>
@@ -113,6 +113,6 @@ export default function Bio(props) {
           margin-left: 2rem;
         }
       `}</style>
-    </ColumnBasis>
+    </Column>
   )
 }
