@@ -161,21 +161,21 @@ export default class Container extends React.Component {
             <h1>WHAT I DO</h1>
             <hr/>
             <Row>
-              <Column align="center">
+              <Column alignItems="center">
               <Progress value="50" name="C++"></Progress>
               <Progress value="60" name="Java"></Progress>
               <Progress value="50" name="PHP"></Progress>
               <Progress value="80" name="Python"></Progress>
               </Column>
 
-              <Column align="center">
+              <Column alignItems="center">
                 <Progress value="90" name="HTML"></Progress>
                 <Progress value="70" name="CSS"></Progress>
                 <Progress value="50" name="MySQL"></Progress>
                 <Progress value="75" name="Javascript"></Progress>
               </Column>
 
-              <Column align="center">
+              <Column alignItems="center">
                 <Progress value="65" name="React"></Progress>
                 <Progress value="60" name="Android Studio"></Progress>
                 <Progress value="25" name="Unreal Engine"></Progress>
