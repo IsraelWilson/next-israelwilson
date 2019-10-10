@@ -7,7 +7,8 @@ export default function Column({display = "flex",
                                 flexShrink = 0,
                                 justifyContent = "normal",
                                 alignItems = "center",
-                                margin = "1rem"}) {
+                                margin = "1rem",
+                                ...props}) {
   return (
     <div>
       {props.children}
