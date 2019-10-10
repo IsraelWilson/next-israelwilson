@@ -49,7 +49,7 @@ export default function Column(props) {
   )
 
   Column.defaultProps = {
-    display: flex,
+    display: "flex",
     flexDirection: "column",
     flexBasisMb: "100%",
     flexBasisTl: "47%",
