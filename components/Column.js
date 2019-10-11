@@ -5,7 +5,7 @@ export default function Column({display = "flex",
                                 flexBasisDt = "22%",
                                 flexGrow = 1,
                                 flexShrink = 0,
-                                justifyContent = "normal",
+                                justifyContent = "flex-start",
                                 alignItems = "center",
                                 margin = "1rem",
                                 ...props}) {

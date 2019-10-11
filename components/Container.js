@@ -126,7 +126,7 @@ export default class Container extends React.Component {
 
     return (
       <div>
-        <Row name="landing" height="85vh" bg="url('https://lh4.googleusercontent.com/jlLx4XvQ3TE6A2HmYuJWUNywOEijDpGVpjAv15jjAKxv67iXAFhWDuvBrUk=w2400')" bgcolor="#232323" blend="luminosity">
+        <Row name="landing" height="85vh" background="url('https://lh4.googleusercontent.com/jlLx4XvQ3TE6A2HmYuJWUNywOEijDpGVpjAv15jjAKxv67iXAFhWDuvBrUk=w2400') no-repeat center center fixed" backgroundColor="#232323" backgroundBlendMode="luminosity">
         </Row>
         <NavBar ref={this.navbarRef} section={this.state} class={this.state.navbar}/>
         <Row ref={this.aboutRef} name="about" justify="center" align="center" margin="0 0 10rem">
@@ -136,7 +136,7 @@ export default class Container extends React.Component {
         </Row>
 
         <Row ref={this.experienceRef} name="experience" justify="center" margin="0 0 10rem">
-          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%">
+          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%" flexGrow="0" alignItems="stretch">
             <h1>WHERE IVE BEEN</h1>
             <hr/>
             <Row>
@@ -156,7 +156,7 @@ export default class Container extends React.Component {
         </Row>
 
         <Row ref={this.skillsRef} name="skills" justify="center" margin="5rem 0 5rem">
-          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%">
+          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%" flexGrow="0" alignItems="stretch">
             <h1>WHAT I DO</h1>
             <hr/>
             <Row>
@@ -185,7 +185,7 @@ export default class Container extends React.Component {
         </Row>
 
         <Row ref={this.educationRef} name="education" justify="center" align="center" margin="5rem 0 5rem">
-          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%">
+          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%" flexGrow="0" alignItems="stretch">
             <h1>WHERE I STUDIED</h1>
             <hr/>
             <Row>
@@ -197,7 +197,7 @@ export default class Container extends React.Component {
         </Row>
 
         <Row ref={this.socializeRef} name="socialize" justify="center" margin="5rem 0 5rem">
-          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%">
+          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%" flexGrow="0" alignItems="stretch">
             <h1>WHERE I SOCIALIZE</h1>
             <hr/>
             <Row>
@@ -210,7 +210,7 @@ export default class Container extends React.Component {
         </Row>
 
         <Row ref={this.contactRef} name="contact" justify="center" align="center">
-          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%">
+          <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%" flexGrow="0" alignItems="stretch">
             <h1>GET IN TOUCH</h1>
             <hr/>
             <Contact/>

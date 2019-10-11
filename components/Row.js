@@ -14,16 +14,16 @@ export default class Row extends React.Component {
         {this.props.children}
         <style jsx>{`
           div {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            flex-grow: 1;
-            background: ${this.props.bg} no-repeat center center fixed;
-            background-size: cover;
-            background-color: ${this.props.bgcolor};
-            background-blend-mode: ${this.props.blend};
-            padding-top: 3rem;
-            padding-bottom: 3rem;
+            display: ${this.props.display};
+            flex-direction: ${this.props.flexDirection};
+            flex-wrap: ${this.props.flexWrap};
+            flex-grow: ${this.props.flexGrow};
+            background: ${this.props.background};
+            background-size: ${this.props.backgroundSize};
+            background-color: ${this.props.backgroundColor};
+            background-blend-mode: ${this.props.backgroundBlendMode};
+            padding-top: ${this.props.paddingTop};
+            padding-bottom: ${this.props.paddingBottom};
             margin: ${this.props.margin};
             height: ${this.props.height};
             justify-content: ${this.props.justify};
@@ -32,5 +32,22 @@ export default class Row extends React.Component {
         `}</style>
       </div>
     );
+  }
+
+  static defaultProps = {
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    flexGrow: "1",
+    background: "initial",
+    backgroundSize: "cover",
+    backgroundColor: "initial",
+    backgroundBlendMode: "initial",
+    paddingTop: "3rem",
+    paddingBottom: "3rem",
+    margin: "1rem",
+    height: "auto",
+    justifyContent: "flex-start",
+    alignItems: "flex-start"
   }
 }

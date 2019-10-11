@@ -2,7 +2,7 @@ import Column from '../components/Column.js'
 
 export default function Bio(props) {
   return (
-      <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%">
+      <Column flexBasisDt="75%" flexBasisTl="75%" flexBasisMb="100%" flexGrow="0" alignItems="stretch">
         <h1>{props.title}</h1>
         <hr/>
         <h2>{props.sub}</h2>
