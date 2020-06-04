@@ -2,7 +2,6 @@ import FlexContainer from '../components/FlexContainer.js'
 import FlexColumn from '../components/FlexColumn.js'
 import FlexRow from '../components/FlexRow.js'
 import JobCard from '../components/JobCard.js'
-import NavBar from '../components/NavBar.js'
 
 export default function Home() {
   return (
