@@ -1,4 +1,4 @@
-export default function Column({display = "flex",
+export default function FlexColumn({display = "flex",
                                 flexDirection = "column",
                                 flexBasisMb = "100%",
                                 flexBasisTl = "47%",

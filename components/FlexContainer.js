@@ -9,7 +9,7 @@ import Position from '../components/Position.js'
 import Education from '../components/Education.js'
 import Bio from '../components/Bio.js'
 
-export default class Container extends React.Component {
+export default class FlexContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {navbar: "clean",

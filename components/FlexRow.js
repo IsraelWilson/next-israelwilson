@@ -1,4 +1,4 @@
-export default class Row extends React.Component {
+export default class FlexRow extends React.Component {
   constructor(props) {
       super(props);
       this.rowRef = React.createRef();

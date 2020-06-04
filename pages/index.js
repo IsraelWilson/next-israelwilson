@@ -1,15 +1,21 @@
-import Container from '../components/Container.js'
-import Column from '../components/Column.js'
-import Row from '../components/Row.js'
-import Meta from '../components/Meta.js'
-
+import FlexContainer from '../components/FlexContainer.js'
+import FlexColumn from '../components/FlexColumn.js'
+import FlexRow from '../components/FlexRow.js'
+import JobCard from '../components/JobCard.js'
 import NavBar from '../components/NavBar.js'
 
-export default function Index() {
-  return (
-    <div>
-      <Meta/>
-      <Container/>
-    </div>
-  )
+export default class Index extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {page: <Home/>};
+  }
+
+  render() {
+    return (
+      <>
+        <NavBar/>
+        {this.state.page}
+      </>
+    )
+  }
 }
