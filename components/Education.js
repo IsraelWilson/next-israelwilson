@@ -1,4 +1,4 @@
-import Column from '../components/Column.js'
+import Column from '../components/FlexColumn.js'
 
 export default function Education(props) {
   return (
