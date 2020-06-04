@@ -1,4 +1,4 @@
-import Column from '../components/FlexColumn.js'
+import FlexColumn from '../components/FlexColumn.js'
 
 export default function JobCard(props) {
   return (
