@@ -1,4 +1,4 @@
-import Row from './Row.js'
+import Row from './FlexRow.js'
 import Link from 'next/link'
 import React from 'react'
 
