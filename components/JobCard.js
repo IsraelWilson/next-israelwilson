@@ -8,7 +8,6 @@ export default function JobCard(props) {
       <p className="right">{props.stack}</p>
       <style jsx>{`
         h1 {
-          display: flex;
           justify-content: space-between;
         }
 

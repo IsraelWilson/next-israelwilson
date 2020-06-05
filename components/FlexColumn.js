@@ -6,9 +6,9 @@ export default function FlexColumn({display = "flex",
                                 flexGrow = 1,
                                 flexShrink = 0,
                                 justifyContent = "flex-start",
-                                alignItems = "center",
+                                alignItems = "stretch",
                                 margin = "1rem",
-                                width = "null",
+                                width = "auto",
                                 ...props}) {
   return (
     <div>
