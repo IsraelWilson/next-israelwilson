@@ -13,7 +13,7 @@ export default function JobCard(props) {
         }
 
         .right {
-          justify-content: flex-end;
+          align-self: flex-end;
         }
       `}</style>
     </FlexColumn>
