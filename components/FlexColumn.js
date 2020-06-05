@@ -8,6 +8,7 @@ export default function FlexColumn({display = "flex",
                                 justifyContent = "flex-start",
                                 alignItems = "center",
                                 margin = "1rem",
+                                width = "null",
                                 ...props}) {
   return (
     <div>
@@ -24,6 +25,7 @@ export default function FlexColumn({display = "flex",
           justify-content: ${justifyContent};
           align-items: ${alignItems};
           margin: ${margin};
+          width: ${width};
         }
 
         /* Tablet styles */
@@ -37,6 +39,7 @@ export default function FlexColumn({display = "flex",
             justify-content: ${justifyContent};
             align-items: ${alignItems};
             margin: ${margin};
+            width: ${width};
           }
         }
 
@@ -51,6 +54,7 @@ export default function FlexColumn({display = "flex",
             justify-content: ${justifyContent};
             align-items: ${alignItems};
             margin: ${margin};
+            width: ${width};
           }
         }
 
