@@ -9,6 +9,7 @@ export default function FlexColumn({display = "flex",
                                 alignItems = "stretch",
                                 margin = "1rem",
                                 width = "auto",
+                                bgColor = "transparent",
                                 ...props}) {
   return (
     <div>
@@ -26,6 +27,7 @@ export default function FlexColumn({display = "flex",
           align-items: ${alignItems};
           margin: ${margin};
           width: ${width};
+          background-color: ${bgColor};
         }
 
         /* Tablet styles */
@@ -40,6 +42,7 @@ export default function FlexColumn({display = "flex",
             align-items: ${alignItems};
             margin: ${margin};
             width: ${width};
+            background-color: ${bgColor};
           }
         }
 
@@ -55,6 +58,7 @@ export default function FlexColumn({display = "flex",
             align-items: ${alignItems};
             margin: ${margin};
             width: ${width};
+            background-color: ${bgColor};
           }
         }
 

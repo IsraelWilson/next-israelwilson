@@ -1,0 +1,91 @@
+SCALE
+-------
+4
+8
+12
+16
+24
+32
+48
+64
+96
+128
+192
+256
+384
+512
+640
+768
+
+ELEMENTS
+-------
+Card: 512
+
+BACKGROUND
+-------
+old: #232323
+background: #121212
+
+PRIMARY
+-------
+900: #01579b
+800: #0277bd
+700: #0288d1
+600: #039be5
+500: #03a9f4
+400: #29b6f6
+300: #4fc3f7
+200: #81d4fa
+100: #b3e5fc
+
+NEUTRAL
+-------
+900: #212121
+800: #424242
+700: #616161
+600: #757575
+500: #9E9E9E
+400: #BDBDBD
+300: #E0E0E0
+200: #EEEEEE
+100: #F5F5F5
+
+NEUTRAL PRIMARY
+-------
+900: #113C5E
+800: #124C6F
+700: #125579
+600: #125E83
+500: #12658B
+400: #256C8C
+300: #38728C
+200: #517B8E
+100: #6C848F
+
+ACCENTS
+-------
+900:
+800:
+700:
+600:
+500:
+400:
+300:
+200:
+100:
+
+ELEVATION
+-------
+box-shadow:0 1px 3px hsla(0, 0%, .12);
+box-shadow:0 1px 2px hsla(0, 0%, .24);
+
+box-shadow:0 3px 6px hsla(0, 0%, .15);
+box-shadow:0 2px 4px hsla(0, 0%, .12);
+
+box-shadow:0 10px 20px hsla(0, 0%, .15);
+box-shadow:0 3px 6px hsla(0, 0%, .10);
+
+box-shadow:0 15px 25px hsla(0, 0%, .15);
+box-shadow:0 5px 10px hsla(0, 0%, .5);
+
+box-shadow:0 20px 40px hsla(0, 0%, .2);
