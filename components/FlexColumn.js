@@ -10,6 +10,7 @@ export default function FlexColumn({display = "flex",
                                 margin = "1rem",
                                 width = "auto",
                                 bgColor = "transparent",
+                                shadow = "none",
                                 ...props}) {
   return (
     <div>
@@ -28,6 +29,7 @@ export default function FlexColumn({display = "flex",
           margin: ${margin};
           width: ${width};
           background-color: ${bgColor};
+          box-shadow: ${shadow};
         }
 
         /* Tablet styles */
