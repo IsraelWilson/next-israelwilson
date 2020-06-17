@@ -28,6 +28,7 @@ export default function FlexColumn({display = "flex",
           justify-content: ${justifyContent};
           align-items: ${alignItems};
           margin: ${margin};
+          padding: ${padding};
           width: ${width};
           background-color: ${bgColor};
           box-shadow: ${shadow};
@@ -44,6 +45,7 @@ export default function FlexColumn({display = "flex",
             justify-content: ${justifyContent};
             align-items: ${alignItems};
             margin: ${margin};
+            padding: ${padding};
             width: ${width};
             background-color: ${bgColor};
           }
@@ -60,6 +62,7 @@ export default function FlexColumn({display = "flex",
             justify-content: ${justifyContent};
             align-items: ${alignItems};
             margin: ${margin};
+            padding: ${padding};
             width: ${width};
             background-color: ${bgColor};
           }
