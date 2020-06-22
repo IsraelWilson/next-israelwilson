@@ -12,6 +12,7 @@ export default function FlexColumn({display = "flex",
                                 width = "auto",
                                 bgColor = "transparent",
                                 shadow = "none",
+                                bRadius = "0",
                                 ...props}) {
   return (
     <div>
@@ -32,6 +33,7 @@ export default function FlexColumn({display = "flex",
           width: ${width};
           background-color: ${bgColor};
           box-shadow: ${shadow};
+          border-radius: ${bRadius};
         }
 
         /* Tablet styles */
@@ -48,6 +50,8 @@ export default function FlexColumn({display = "flex",
             padding: ${padding};
             width: ${width};
             background-color: ${bgColor};
+            box-shadow: ${shadow};
+            border-radius: ${bRadius};
           }
         }
 
@@ -65,6 +69,8 @@ export default function FlexColumn({display = "flex",
             padding: ${padding};
             width: ${width};
             background-color: ${bgColor};
+            box-shadow: ${shadow};
+            border-radius: ${bRadius};
           }
         }
 
