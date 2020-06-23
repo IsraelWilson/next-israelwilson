@@ -14,7 +14,7 @@ export default function JobCard(props) {
         }
 
         span {
-          font-size: 48px;
+          font-size: 24px;
           font-weight: 700;
         }
 
