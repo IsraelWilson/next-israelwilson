@@ -10,9 +10,12 @@ export default function JobCard(props) {
         h1 {
           display: flex;
           justify-content: space-between;
+          margin-bottom: 12px;
+        }
+
+        span {
           font-size: 48px;
           font-weight: 700;
-          margin-bottom: 12px;
         }
 
         .desc {
