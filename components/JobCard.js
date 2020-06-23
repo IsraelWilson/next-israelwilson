@@ -22,7 +22,6 @@ export default function JobCard(props) {
         .stack {
           align-self: flex-end;
           color: hsl(0, 0%, 14%);
-          margin-bottom: 12px;
         }
       `}</style>
     </FlexColumn>
