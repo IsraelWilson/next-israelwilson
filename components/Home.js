@@ -5,6 +5,10 @@ import JobCard from '../components/JobCard.js'
 export default function Home() {
   return (
     <div>
+    <JobCard company="AT&T" date="June 2020 - Current" desc="Oceus is a telecommunication company that provides custom broaband solutions for government and enterprise customers across the globe. I worked
+                                                                               as a software engineer for their Xiphos and Device teams. I contributed to the development of the REST API, React application, automated Jenkins
+                                                                               builds, and wrote a small system process to manage an LTE modem. I continued the development of their React application, did development for the
+                                                                               REST API, and developed background proceses to manage a network connection on a raspberry pi via modem." stack="C++ Python Go React Linux"/>
       <JobCard company="Oceus Networks" date="September 2018 - April 2020" desc="Oceus is a telecommunication company that provides custom broaband solutions for government and enterprise customers across the globe. I worked
                                                                                  as a software engineer for their Xiphos and Device teams. I contributed to the development of the REST API, React application, automated Jenkins
                                                                                  builds, and wrote a small system process to manage an LTE modem. I continued the development of their React application, did development for the

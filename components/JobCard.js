@@ -10,7 +10,7 @@ export default function JobCard(props) {
         h1 {
           display: flex;
           justify-content: space-between;
-          font-size: 24px;
+          font-size: 48px;
           font-weight: 700;
           margin-bottom: 12px;
         }
@@ -21,7 +21,7 @@ export default function JobCard(props) {
 
         .stack {
           align-self: flex-end;
-          color: hsl(0, 0%, 14%);
+          color: hsla(0, 0%, .6);
         }
       `}</style>
     </FlexColumn>
