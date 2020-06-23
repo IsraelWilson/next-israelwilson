@@ -4,8 +4,8 @@ export default function JobCard(props) {
   return (
     <FlexColumn width="512px" bgColor="hsla(199, 98%, 48%, .12)" shadow="0 10px 20px hsla(0, 0%, .15), 0 3px 6px hsla(0, 0%, .10)" padding="24px" bRadius="30px">
       <h1><span>{props.company}</span><span>{props.date}</span></h1>
-      <p>{props.desc}</p>
-      <p className="right fade">{props.stack}</p>
+      <p className="desc">{props.desc}</p>
+      <p className="stack">{props.stack}</p>
       <style jsx>{`
         h1 {
           display: flex;
@@ -19,13 +19,10 @@ export default function JobCard(props) {
           margin-bottom: 12px;
         }
 
-        .right {
+        .stack {
           align-self: flex-end;
-          margin-bottom: 12px;
-        }
-
-        .fade {
           color: hsl(0, 0%, 14%);
+          margin-bottom: 12px;
         }
       `}</style>
     </FlexColumn>
