@@ -4,7 +4,7 @@ import JobCard from '../components/JobCard.js'
 
 export default function Home() {
   return (
-    <div>
+    <FlexRow>
     <JobCard company="AT&T" date="June 2020 - Current" desc="Oceus is a telecommunication company that provides custom broaband solutions for government and enterprise customers across the globe. I worked
                                                                                as a software engineer for their Xiphos and Device teams. I contributed to the development of the REST API, React application, automated Jenkins
                                                                                builds, and wrote a small system process to manage an LTE modem. I continued the development of their React application, did development for the
@@ -22,6 +22,6 @@ export default function Home() {
                                                                         pharetra dolor. Vestibulum dolor erat, sagittis hendrerit egestas id, hendrerit vel augue. In venenatis congue massa a blandit. Maecenas tempor eget
                                                                         nulla eleifend viverra. Suspendisse potenti. Suspendisse faucibus luctus nisl eu scelerisque. Mauris efficitur molestie feugiat. Quisque quis sem quam."
                                                                         stack="Administration Hardware Windows"/>
-    </div>
+    </FlexRow>
   )
 }
