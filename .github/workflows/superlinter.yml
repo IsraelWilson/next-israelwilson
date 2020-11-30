@@ -22,4 +22,6 @@ jobs:
         uses: github/super-linter@v3
         env:
           DEFAULT_BRANCH: master
+          VALIDATE_CSS: true
+          VALIDATE_JAVASCRIPT_ES: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
