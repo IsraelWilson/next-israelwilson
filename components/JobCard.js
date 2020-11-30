@@ -1,24 +1,35 @@
-import FlexColumn from '../components/FlexColumn.js'
+import Column from '../components/Column.js'
 
 export default function JobCard(props) {
+
+  function getBullets() {
+    return props.bullets.map(bullet =>
+      <>
+        <p className="bullet">{bullet}</p>
+        <style jsx>{`
+          p {
+            margin-bottom: 12px;
+          }`}
+        </style>
+      </>);
+  }
+
   return (
-    <FlexColumn width="512px" bgColor="hsla(199, 98%, 48%, .12)" shadow="0 10px 20px hsla(0, 0%, .15), 0 3px 6px hsla(0, 0%, .10)" padding="24px" bRadius="30px">
-      <h1><span>{props.company}</span><span>{props.date}</span></h1>
-      <p className="desc">{props.desc}</p>
+    <Column width="512px" bgColor="hsla(199, 98%, 48%, .12)" shadow="0 10px 20px hsla(0, 0%, .15), 0 3px 6px hsla(0, 0%, .10)" padding="24px" bRadius="30px" boxSizing="border-box">
+      <h1>{props.company}</h1>
+      <h2>{props.date}</h2>
+      {getBullets()}
       <p className="stack">{props.stack}</p>
       <style jsx>{`
         h1 {
-          display: flex;
-          justify-content: space-between;
+          font-size: 24px;
+          font-weight: 700;
           margin-bottom: 12px;
         }
 
-        span {
-          font-size: 24px;
-          font-weight: 700;
-        }
-
-        .desc {
+        h2 {
+          display: flex;
+          justify-content: space-between;
           margin-bottom: 12px;
         }
 
@@ -27,6 +38,6 @@ export default function JobCard(props) {
           color: hsla(0, 0%, .6);
         }
       `}</style>
-    </FlexColumn>
+    </Column>
   )
 }

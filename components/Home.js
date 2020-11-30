@@ -1,27 +1,41 @@
-import FlexColumn from '../components/FlexColumn.js'
-import FlexRow from '../components/FlexRow.js'
+import Column from '../components/Column.js'
+import Row from '../components/Row.js'
+import Carousel from '../components/Carousel.js'
 import JobCard from '../components/JobCard.js'
 
 export default function Home() {
+  const att = {
+    company: "AT&T",
+    date: "08/2020 - 09/2020",
+    bullets: ["Led the development of a React web application that allows users to search and filter records of people that have spoken at the company. Internal users have access to additional features that make adding and maintaining records easier.",
+    "Created the REST API that handles database request and utilized TypeScript on the back end to simplify debugging.",
+    "Simplified the component structure on the application front end, added additional components as the project grew, and mentored a younger developer."],
+    stack: "C++ Python Go React Linux"
+  };
+  const oceus = {
+    company: "Oceus Networks",
+    date: "09/2018 - 04/2020",
+    bullets: ["Managed a Python REST API using the Flask web framework. This included creating and testing new endpoints that deliver JSON data in real time.",
+    "Lead full stack developer for our React web application. Go and Node were used on the back end as well as Postgres for the database.",
+    "Created a command line application, written in C++, that parsed data read through telnet and saved the captured data as a .csv or text file.",
+    "Created automated build processes for company applications in Jenkins using pipeline scripts.",
+    "Regularly performed unit tests during the development of software and quality assurance test for each application release."],
+    stack: "C++ Python Go React Linux"
+  };
+  const dxc = {
+    company: "DXC Technology",
+    date: "05/2016 - 05/2018",
+    bullets: ["Improved on Agility, a cloud deployment application built on top of docker containers, by creating new application features written in Java.",
+    "Continued use of Git as a means to achieve continuous delivery.",
+    "Wrote installation guides and user manuals tailored for every unique application deployment."],
+    stack: "Java Documentation Linux"
+  };
+
   return (
-    <FlexRow>
-    <JobCard company="AT&T" date="June 2020 - Current" desc="Oceus is a telecommunication company that provides custom broaband solutions for government and enterprise customers across the globe. I worked
-                                                                               as a software engineer for their Xiphos and Device teams. I contributed to the development of the REST API, React application, automated Jenkins
-                                                                               builds, and wrote a small system process to manage an LTE modem. I continued the development of their React application, did development for the
-                                                                               REST API, and developed background proceses to manage a network connection on a raspberry pi via modem." stack="C++ Python Go React Linux"/>
-      <JobCard company="Oceus Networks" date="September 2018 - April 2020" desc="Oceus is a telecommunication company that provides custom broaband solutions for government and enterprise customers across the globe. I worked
-                                                                                 as a software engineer for their Xiphos and Device teams. I contributed to the development of the REST API, React application, automated Jenkins
-                                                                                 builds, and wrote a small system process to manage an LTE modem. I continued the development of their React application, did development for the
-                                                                                 REST API, and developed background proceses to manage a network connection on a raspberry pi via modem." stack="C++ Python Go React Linux"/>
-      <JobCard company="DXC Technology" date="May 2016 - May 2018" desc="DXC is an end-to-end IT service company. It was here that I finally transitioned from Windows to Linux. I finally " stack="Java Documentation Linux"/>
-      <JobCard company="Urban Prep" date="August 2015 - May 2016" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt, purus eget convallis fermentum, massa nisl finibus augue, vel vulputate lectus
-                                                                        lectus vel massa. In suscipit a tortor id gravida. Proin maximus tempor convallis. Proin sagittis ipsum in dolor gravida consectetur nec faucibus tellus.
-                                                                        Morbi ac mauris ex. Donec sapien urna, malesuada vitae est nec, tincidunt semper nulla. Aliquam suscipit orci nibh, mattis dapibus ligula ultrices non.
-                                                                        Mauris faucibus sodales tellus in congue. Ut molestie nibh luctus leo eleifend, quis congue quam iaculis." stack="Communication Research Windows"/>
-      <JobCard company="Fulton County" date="May 2012 - May 2013" desc="Sed velit risus, imperdiet sodales ultricies sed, luctus sit amet nisl. Quisque molestie tincidunt risus a condimentum. Phasellus a fermentum est, id
-                                                                        pharetra dolor. Vestibulum dolor erat, sagittis hendrerit egestas id, hendrerit vel augue. In venenatis congue massa a blandit. Maecenas tempor eget
-                                                                        nulla eleifend viverra. Suspendisse potenti. Suspendisse faucibus luctus nisl eu scelerisque. Mauris efficitur molestie feugiat. Quisque quis sem quam."
-                                                                        stack="Administration Hardware Windows"/>
-    </FlexRow>
+    <Carousel>
+      <JobCard company={att.company} date={att.date} bullets={att.bullets} stack={att.stack}/>
+      <JobCard company={oceus.company} date={oceus.date} bullets={oceus.bullets} stack={oceus.stack}/>
+      <JobCard company={dxc.company} date={dxc.date} bullets={dxc.bullets} stack={dxc.stack}/>
+    </Carousel>
   )
 }
