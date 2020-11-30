@@ -13,7 +13,7 @@ jobs:
     runs-on: next-israelwilson
 
     steps:
-      # Checks out a copy of your repository on the ubuntu-latest machine
+      # Checks out a copy of your repository on digitalocean server
       - name: Checkout code
         uses: actions/checkout@v2
 
